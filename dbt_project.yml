@@ -7,8 +7,10 @@ version: '0.1.0'
 models:
   sap_source:
     +materialized: table
-    +schema: "{{ var('sap_schema') }}"
-    +database: "{{ var('sap_database') }}"
+    # +schema: "{{ var('sap_schema') }}"
+    # +database: "{{ var('sap_database') }}"
+    +database: analytics
+    +schema: dbt_sap_source
 
 vars:
   sap_source:

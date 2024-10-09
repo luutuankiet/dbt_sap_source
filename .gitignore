@@ -7,3 +7,6 @@ keyfile.json
 develop/
 
 dbt_packages/
+
+service_account.json
+.venv
