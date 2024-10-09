@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: sap
     schema: "{{ var('sap_schema', 'sap') }}"
-    database: "{% if target.type != 'spark' %}{{ var('sap_database', target.database) }}{% endif %}"
+    database: "{{ var('sap_database')}}"
     
     loader: fivetran
     loaded_at_field: _fivetran_synced
